@@ -1,0 +1,3 @@
+!#/bi/bash
+
+python3 -c "$PYCODE"
