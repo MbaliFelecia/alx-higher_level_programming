@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-if__name__ == "__main__":
+if __name__ == "__main__":
     import sys
     i = len(sys.argv) - 1
 
-    if i == 0:
-        print("{} arguments.".format(i))
-    elif i == 1:
+    if i == 1:
         print("{} arguments:".format(i))
+    elif i == 0:
+        print("{} arguments.".format(i))
     else:
         print("{} arguments:".format(i))
 
