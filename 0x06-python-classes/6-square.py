@@ -55,7 +55,7 @@ class Square:
         """ Retrieves the position of the square
 
         Returns:
-        position of the square
+            position of the square
         """
         return self.__position
 
