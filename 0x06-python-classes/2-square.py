@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Defination of class 'Square' with private instance attribute size"""
 
+
 class Square:
     """ Class Square that define a square.
     """
@@ -18,4 +19,4 @@ class Square:
             raise TypeError("size must be an integer")
         if size < 0:
             raise ValueError("size must be >= 0")
-        self,__size = size
+        self.__size = size
