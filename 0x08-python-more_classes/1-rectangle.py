@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" class module that create an empty class Rectangle and defines a rectangle"""
+""" class module creates an empty class and defines a rectangle"""
 
 
 class Rectangle:
@@ -15,7 +15,6 @@ class Rectangle:
             TypeError: if the width or height is not integers
             ValueError: if the width or height is less than 0
         """
-
 
         self.width = width
         self.height = height
@@ -55,7 +54,7 @@ class Rectangle:
         """
 
         return self.__height
-        
+
     @height.setter
     def height(self, value):
         """ method to set the height
@@ -71,7 +70,5 @@ class Rectangle:
             raise TypeError("height must be integer")
         if value < 0:
             raise ValueError("height must be >= 0")
-            
-        self.__height = value
 
-        
+        self.__height = value
