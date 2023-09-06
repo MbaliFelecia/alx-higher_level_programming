@@ -5,6 +5,8 @@
 class Rectangle:
     """ Empty classs Rectangle"""
 
+    number_of_instances = 0
+
     def __init__(self, width=0, height=0):
         """ A method to initialize instances
 
@@ -18,7 +20,7 @@ class Rectangle:
 
         self.width = width
         self.height = height
-        Rectangle.number_of instances += 1
+        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
@@ -75,12 +77,22 @@ class Rectangle:
         self.__height = value
 
     def area(self):
-        """ Module that calculates the area of rectangle instance"""
+        """ Module that calculates the area of rectangle instance
+
+        Returns:
+            rectangle area
+
+        """
 
         return self.__width * self.__height
 
     def perimeter(self):
-        """ module that calculates the perimeter of rectangle instance"""
+        """ module that calculates the perimeter of rectangle instance
+
+        Returns:
+            rectangle perimeter
+
+        """
         if self.__width == 0 or self.__height == 0:
             return 0
         return (2 * (self.__width + self.__height))
