@@ -18,6 +18,7 @@ class Rectangle:
 
         self.width = width
         self.height = height
+        Rectangle.number_of instances += 1
 
     @property
     def width(self):
@@ -109,5 +110,5 @@ class Rectangle:
 
     def __del__(self):
         """ Method that prints a message when the instance id deleted"""
-        Rectangle.number_of_instances -= 1
+        Rectangle.number_of_instances -= 1       
         print("Bye rectangle...")
