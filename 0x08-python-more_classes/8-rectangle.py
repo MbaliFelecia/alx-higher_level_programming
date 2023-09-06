@@ -127,7 +127,7 @@ class Rectangle:
         print("Bye rectangle...")
 
     @staticmethod
-    def def bigger_or_equal(rect_1, rect_2):
+    def bigger_or_equal(rect_1, rect_2):
         """ Method which returns the bigger Rectangle
 
         Args:
