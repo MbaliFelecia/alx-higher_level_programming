@@ -1,14 +1,7 @@
 #!/usr/bin/python3
 """ Functio  that returns True/False if obj is a type of a_class"""
+
+
 def is_same_class(obj, a_class):
-    """ Function that returns True/False if ojc is a type of a_class
-
-    Args:
-        obj: object
-        a_class: class type
-
-    Returns:
-        True if type of obj is a_class
-        False, otherwise
-    """
+    """ Function that returns True/False if ojc is a type of a_class"""
     return type(obj)is a_class
