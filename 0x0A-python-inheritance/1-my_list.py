@@ -6,7 +6,7 @@
 
     """
 
-class Mylist(list):
+class MyList(list):
     """ class that inherits the attributes references of class list
 
     Args:
