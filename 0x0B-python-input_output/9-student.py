@@ -5,7 +5,7 @@
 class Student:
     """ A class called Student """
 
-    def__init__(self, first_name, last_name, age):
+    def __init__(self, first_name, last_name, age):
         """ A contractor method for the student class
 
         Args:
