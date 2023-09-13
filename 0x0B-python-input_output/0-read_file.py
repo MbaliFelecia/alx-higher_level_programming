@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" A module containing defination of the read_file function """
+""" A module containing defination for the read_file function """
 
 
 def read_file(filename=""):
@@ -12,3 +12,4 @@ def read_file(filename=""):
     with open(filename, "r", encoding="utf-8") as f:
 	read_data = f.read()
 	print(read_data, end="")
+
