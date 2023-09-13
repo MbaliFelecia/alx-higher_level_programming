@@ -19,10 +19,10 @@ class Student:
         self.age = age
 
     def to_json(self):
-        """ A method that retrieves a dictinary representation of
-            a student instance
+        """ A method that retrieves a dictionary representation
+            of a Student instance
         Returns:
-            the dictionary representation of a sTudent instance
+            the dictionary representation of student instance
         """
 
         return self.__dict__
