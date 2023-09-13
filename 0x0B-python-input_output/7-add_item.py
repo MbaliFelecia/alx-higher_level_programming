@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """ A python script that adds all arguments to a
-    python list, then saves them to a file """ 
+    python list, then saves them to a file """
 
 
 import os
