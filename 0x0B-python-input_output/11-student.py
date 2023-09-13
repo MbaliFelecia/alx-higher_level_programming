@@ -38,6 +38,6 @@ class Student:
 
         Agrs:
             json: A new dictionary of attributes
-         """
-         for key in json:
-             setattr(self, key, json[key])
+        """
+        for key in json:
+            setattr(self, key, json[key])
