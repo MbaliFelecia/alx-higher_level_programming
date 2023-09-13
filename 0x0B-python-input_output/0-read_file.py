@@ -3,12 +3,12 @@
 
 
 def read_file(filename=""):
-    """ A function  that reads  data from a file
+    """ Afunction that reads data from a file
 
     Args:
-	filename: the name of the file to be read
+        Filename: the name of the file to be read
     """
 
     with open(filename, "r", encoding="utf-8") as f:
-	read_data = f.read()
-	print(read_data, end="")
+        read_data = f.read()
+        print(read_data, end="")
