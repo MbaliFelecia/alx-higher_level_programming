@@ -77,9 +77,13 @@ class Rectangle(Base):
         calculate and return the area of a rectangle.
         """
         return self.__width * self.__height
+
     def display(self):
         """
         Display the Rectangle instance using '#' characters
         """
         for _ in range(self.__height):
             print('#' * self.width)
+
+    def __str__(self):
+        return f"[Rectangle] ({self.id}) {self.x}/{self.y} - {self.__width}/{self.__height}"
