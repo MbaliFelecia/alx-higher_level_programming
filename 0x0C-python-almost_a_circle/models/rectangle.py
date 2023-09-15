@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """ Module  with a class Base """
+
+
 class Base:
     """ Class Base """
     __nb_objects = 0
@@ -11,6 +13,7 @@ class Base:
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
+
 
 class Rectangle(Base):
     """ Class Rectangle inherited from Base class"""
@@ -27,8 +30,10 @@ class Rectangle(Base):
 
     @width.setter
     def width(self, value):
+        if not isinstance(value, int):
+            raise TypeError("width must be an integer")
         if value <= 0:
-            raise  ValueError("width must be greater than 0")
+            raise ValueError("width must be > 0")
         self.__width = value
 
     @property
@@ -37,8 +42,10 @@ class Rectangle(Base):
 
     @height.setter
     def height(self, value):
+        if not isinstance(value, int):
+            raise TypeError("height must be an integer")
         if value <= 0:
-            raise ValueError("Height must be greater than 0")
+            raise ValueError("Height must be > 0")
         self.__height = value
 
     @property
@@ -47,16 +54,20 @@ class Rectangle(Base):
 
     @x.setter
     def x(self, value):
+        if not isinstance(value, int):
+            raise TypeError("x must be an integer")
         if value < 0:
-            raise ValueError("x cannot be negative")
+            raise ValueError("x must be >= 0")
         self.__x = value
 
     @property
     def y(self):
         return self.__y
-    
+
     @y.setter
     def y(self, value):
+        if not isinstance(value, int):
+            raise TypeError("y must be an integer")
         if value < 0:
-            raise ValueError("y cannot be negative")
+            raise ValueError("y must be >= 0")
         self.__y = value
