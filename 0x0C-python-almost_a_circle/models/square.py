@@ -25,3 +25,17 @@ class Square(Rectangle):
             str: The formatted string.
         """
         return f"[Square] ({self.id}) {self.x}/{self.y} - {self.width}"
+
+    def to_dictionary(self):
+        """
+        Return a dictionary representation of the square instance.
+
+        Returns:
+            dict: A dictionary containing the attributes of a square.
+        """
+        return {
+            'id': self.id,
+            'size': self.size,
+            'x': self.x,
+            'y': self.y
+        }
