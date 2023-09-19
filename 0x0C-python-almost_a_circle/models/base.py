@@ -125,7 +125,7 @@ class Base:
         for csv_elem in csv_list:
             dict_csv = {}
             for kv in enumerate(csv_elem):
-                dict_csv[list_keys[kv[o]]] = int(kv[1])
+                dict_csv[list_keys[kv[0]]] = int(kv[1])
             matrix.append(dict_csv)
 
         list_ins = []
