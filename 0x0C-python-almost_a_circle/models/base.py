@@ -36,10 +36,10 @@ class Base:
             for i in range(len(list_objs)):
                 list_dic.append(list_objs[i].to_dictionary())
 
-        list = cls.to__json_string(list_dic)
+        list = cls.to_json_string(list_dic)
 
         with open(filename, 'w') as f:
-            f.write(lists)
+            f.write(list)
 
     @staticmethod
     def from__json_string(json_string):
