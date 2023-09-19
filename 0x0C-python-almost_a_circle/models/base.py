@@ -69,7 +69,7 @@ class Base:
         with open(filename, 'r') as f:
             list_str = f.read()
 
-        list_cls = cls.from__json_string(list_str)
+        list_cls = cls.from_json_string(list_str)
         list_ins = []
 
         for index in range(len(list_cls)):
