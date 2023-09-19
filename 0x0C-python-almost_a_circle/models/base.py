@@ -20,7 +20,7 @@ class Base:
     @staticmethod
     def to_json_string(list_dictionaries):
         """ List to Json string """
-        if not list_dictionaries or len(list_dictionaries) == 0:
+        if list_dictionaries is None or list_dictionaries == "[]":
             return "[]"
         return json.dumps(list_dictionaries)
 
@@ -42,7 +42,7 @@ class Base:
             f.write(list)
 
     @staticmethod
-    def from__json_string(json_string):
+    def from_json_string(json_string):
         """ JSON string to dictionary """
         if not json_string:
             return []
